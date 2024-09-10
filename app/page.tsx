@@ -8,14 +8,14 @@ export default function Component() {
         <div className="flex justify-center">
           <AlertTriangle className="h-16 w-16 text-yellow-500 animate-pulse" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-900">System Maintenance</h1>
+        <h1 className="text-3xl font-bold text-gray-900">System Upgrade</h1>
         <p className="text-lg text-gray-600">
-          We&apos;re currently performing some routine maintenance on our
-          systems. We&apos;ll be back shortly!
+          We are currently upgrading our system to then enviroment(domain), we
+          shall be back ASAP .
         </p>
         <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
           <Clock className="h-4 w-4" />
-          <span>Estimated downtime: 2 hours</span>
+          <span>Estimated downtime: 1 Month</span>
         </div>
         <div className="pt-6">
           <Button className="w-full">
