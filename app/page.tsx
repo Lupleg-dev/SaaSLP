@@ -10,8 +10,8 @@ export default function Component() {
         </div>
         <h1 className="text-3xl font-bold text-gray-900">System Upgrade</h1>
         <p className="text-lg text-gray-600">
-          We are currently upgrading our system to then enviroment(domain), we
-          shall be back ASAP .
+          We are currently upgrading our system to serve you better. We
+          apologize for the inconvenience.
         </p>
         <div className="flex items-center justify-center space-x-2 text-sm text-gray-500">
           <Clock className="h-4 w-4" />
