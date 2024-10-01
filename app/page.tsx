@@ -48,7 +48,7 @@ export default function Component() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100">
       <header className="container mx-auto px-4 py-6 sm:py-8 md:py-12">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-purple-800 mb-4">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-purple-800 mt-10 mb-4">
           Ship Faster with Premium Templates
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-center text-gray-600 mb-8">
