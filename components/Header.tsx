@@ -57,7 +57,7 @@ export default function Header() {
             <ShoppingCart className="h-5 w-5" />
             <span className="sr-only">Cart</span>
           </Button>
-          <Button variant="default">Sign In</Button>
+          <Button variant="default" className='bg-[#954DEA] hover:bg-[#954DEA]'>Sign In</Button>
         </div>
       </nav>
       {/* Mobile menu */}
@@ -99,7 +99,7 @@ export default function Header() {
                 ))}
               </div>
               <div className="py-6">
-                <Button variant="default" className="w-full">Sign In</Button>
+                <Button variant="default" className="w-full bg-[#954DEA] hover:bg-[#954DEA] ">Sign In</Button>
               </div>
             </div>
           </div>
