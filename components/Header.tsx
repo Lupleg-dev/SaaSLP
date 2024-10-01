@@ -3,12 +3,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Menu, X, ShoppingCart, Search } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+
 
 const navItems = [
   { name: 'Templates', href: '/templates' },
@@ -32,7 +27,7 @@ export default function Header() {
                 <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                 <line x1="12" y1="22.08" x2="12" y2="12"></line>
               </svg>
-              <span className="ml-2 text-xl font-bold text-gray-900">TemplateHub</span>
+              <span className="ml-2 text-xl font-bold text-gray-900">ShipNow</span>
             </div>
           </Link>
         </div>
@@ -78,7 +73,7 @@ export default function Header() {
                   <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
                   <line x1="12" y1="22.08" x2="12" y2="12"></line>
                 </svg>
-                <span className="ml-2 text-xl font-bold text-gray-900">TemplateHub</span>
+                <span className="ml-2 text-xl font-bold text-gray-900">ShipNow</span>
               </div>
             </Link>
             <button
