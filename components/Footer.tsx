@@ -106,7 +106,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {new Date().getFullYear()} TemplateHub. All rights reserved.
+            &copy; {new Date().getFullYear()} Lupleg ShipNow. All rights reserved.
           </p>
         </div>
       </div>
