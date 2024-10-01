@@ -10,6 +10,7 @@ import {
   Menu,
 } from "lucide-react";
 import FAQ from "@/components/sections/faq";
+import { useRouter } from "next/navigation";
 
 const categories = [
   { name: "E-commerce", icon: ShoppingBag },
@@ -19,7 +20,7 @@ const categories = [
 ];
 
 const templates = [
-  { name: "E-commerce Starter", category: "E-commerce", price: 49 },
+  { name: "E-commerce Starter", category: "E-commerce", price: 30 },
   { name: "SaaS Dashboard", category: "SaaS", price: 79 },
   { name: "Business Portfolio", category: "Business", price: 39 },
   { name: "Online Course Platform", category: "Education", price: 89 },
@@ -37,6 +38,12 @@ export default function Component() {
     selectedCategory === "All"
       ? templates
       : templates.filter((template) => template.category === selectedCategory);
+
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.push("/templates");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-100">
@@ -136,7 +143,10 @@ export default function Component() {
             Get started with our premium templates today and launch faster than
             ever.
           </p>
-          <button className="px-6 sm:px-8 py-2 sm:py-3 bg-white text-purple-800 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center">
+          <button
+            onClick={handleBack}
+            className="px-6 sm:px-8 py-2 sm:py-3 bg-white text-purple-800 rounded-full text-base sm:text-lg font-semibold hover:bg-gray-100 transition-colors inline-flex items-center"
+          >
             Browse All Templates
             <ChevronRight className="ml-2 h-5 w-5" />
           </button>
