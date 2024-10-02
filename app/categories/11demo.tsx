@@ -1,4 +1,3 @@
-"use client"
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -77,16 +76,16 @@ export default function CategoryListingPage() {
   return (
     <div className="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen py-8 sm:py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        {/* <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6 sm:mb-8">Template Categories</h1> */}
+        <h1 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-6 sm:mb-8">Template Categories</h1>
         
-        <div className="max-w-md mx-auto mt-11 mb-8">
+        <div className="max-w-md mx-auto mb-8">
           <div className="relative">
             <Input
               type="text"
               placeholder="Search categories..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="pl-10 text-black"
+              className="pl-10"
             />
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
           </div>
@@ -95,22 +94,13 @@ export default function CategoryListingPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
           {filteredCategories.map(category => (
             <Card key={category.id} className="overflow-hidden hover:shadow-lg transition-shadow duration-300">
-              <div className="relative h-40 sm:h-48 group">
+              <div className="relative h-40 sm:h-48">
                 <Image 
                   src={category.image} 
                   alt={category.name}
                   layout="fill"
                   objectFit="cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-lg font-semibold mb-2">{category.name}</p>
-                  <p className="text-sm mb-4">{category.templateCount} templates</p>
-                  <Button asChild variant="secondary" size="sm">
-                    <Link href={`/templates?category=${category.name}`}>
-                      View Templates
-                    </Link>
-                  </Button>
-                </div>
               </div>
               <CardContent className="p-4 sm:p-6">
                 <h2 className="text-xl sm:text-2xl font-semibold mb-2">{category.name}</h2>
@@ -119,7 +109,7 @@ export default function CategoryListingPage() {
                   <span className="text-sm font-medium text-gray-500">{category.templateCount} templates</span>
                   <Button asChild variant="ghost" size="sm" className="text-[#954DEA] hover:text-[#8A45D8]">
                     <Link href={`/templates?category=${category.name}`}>
-                      Explore
+                      View Templates
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
