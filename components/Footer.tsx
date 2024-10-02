@@ -15,18 +15,16 @@ export default function Footer() {
                   Solutions
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {["E-commerce", "SaaS", "Business", "Education"].map(
-                    (item) => (
-                      <li key={item}>
-                        <Link
-                          href="#"
-                          className="text-base hover:text-white transition-colors"
-                        >
-                          {item}
-                        </Link>
-                      </li>
-                    )
-                  )}
+                  {["E-commerce", "SaaS", "Business", "Education"].map((item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-base hover:text-white transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
@@ -34,18 +32,21 @@ export default function Footer() {
                   Support
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {["Pricing", "Documentation", "Guides", "API Status"].map(
-                    (item) => (
-                      <li key={item}>
-                        <Link
-                          href="#"
-                          className="text-base hover:text-white transition-colors"
-                        >
-                          {item}
-                        </Link>
-                      </li>
-                    )
-                  )}
+                  {[
+                    { name: "Contact", href: "mailto:payments@lupleg.website" },
+                    { name: "Help Center", href: "/help" },
+                    { name: "FAQ", href: "/faq" },
+                    { name: "Status", href: "/footer/status" },
+                  ].map((item) => (
+                    <li key={item.name}>
+                      <Link
+                        href={item.href}
+                        className="text-base hover:text-white transition-colors"
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -55,18 +56,16 @@ export default function Footer() {
                   Company
                 </h3>
                 <ul className="mt-4 space-y-4">
-                  {["About", "Blog", "Jobs", "Press", "Partners"].map(
-                    (item) => (
-                      <li key={item}>
-                        <Link
-                          href="#"
-                          className="text-base hover:text-white transition-colors"
-                        >
-                          {item}
-                        </Link>
-                      </li>
-                    )
-                  )}
+                  {["About", "Blog", "Jobs", "Press", "Partners"].map((item) => (
+                    <li key={item}>
+                      <Link
+                        href="#"
+                        className="text-base hover:text-white transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
@@ -93,8 +92,7 @@ export default function Footer() {
               Subscribe to our newsletter
             </h3>
             <p className="mt-4 text-base text-gray-300">
-              The latest news, articles, and resources, sent to your inbox
-              weekly.
+              The latest news, articles, and resources, sent to your inbox weekly.
             </p>
             <form className="mt-4 sm:flex sm:max-w-md">
               <label htmlFor="email-address" className="sr-only">
@@ -160,8 +158,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-base text-gray-400 md:mt-0 md:order-1">
-            &copy; {new Date().getFullYear()} Lupleg ShipNow. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Lupleg ShipNow. All rights reserved.
           </p>
         </div>
       </div>
