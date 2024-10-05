@@ -19,7 +19,7 @@ const templates = [
     rating: 4.5,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Responsive design", "Product catalog", "Shopping cart", "Checkout process", "Customer reviews"],
-    demo: "https://example.com/demo/ecommerce-starter",
+    demo: "/preview/demos/ecommerce-starter",
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const templates = [
     rating: 4.8,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Responsive layout", "Data visualization", "User management", "Settings panel", "Activity logs"],
-    demo: "https://example.com/demo/saas-dashboard",
+    demo: "/preview/demos/saas-dashboard",
   },
   {
     id: 3,
@@ -41,7 +41,7 @@ const templates = [
     rating: 4.6,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Customizable sections", "Project showcase", "Contact form", "Blog integration", "Social media links"],
-    demo: "https://example.com/demo/portfolio-pro",
+    demo: "/preview/demos/portfolio-pro",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const templates = [
     rating: 4.7,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Course creation", "Student management", "Progress tracking", "Online quizzes", "Discussion forums"],
-    demo: "https://example.com/demo/lms-template",
+    demo: "/preview/demos/lms-template",
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ const templates = [
     rating: 4.4,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Online menu", "Reservation system", "Customer reviews", "Photo gallery", "Contact information"],
-    demo: "https://example.com/demo/restaurant-reservation",
+    demo: "/preview/demos/restaurant-reservation",
   },
   {
     id: 6,
@@ -74,7 +74,7 @@ const templates = [
     rating: 4.5,
     image: "/placeholder.svg?height=400&width=600",
     features: ["Workout planner", "Progress charts", "Nutrition log", "Goal setting", "Community features"],
-    demo: "https://example.com/demo/fitness-tracker",
+    demo: "/preview/demos/fitness-tracker",
   },
 ]
 
