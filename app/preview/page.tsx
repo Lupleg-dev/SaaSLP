@@ -111,7 +111,7 @@ const templates = [
     category: "E-commerce",
     description:
       " With this landing page, you can easy showcase your products easy to use and free hustle.",
-    price: 89,
+    price: 71,
     rating: 4.7,
     image: "/placeholder.svg?height=400&width=600",
     demo: "/preview/demos/real-estate-listings",
