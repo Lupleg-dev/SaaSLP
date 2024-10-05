@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, XCircle, AlertTriangle, Clock } from "lucide-react";
+import Link from "next/link";
 
 type ServiceStatus = "operational" | "degraded" | "outage" | "maintenance";
 
@@ -88,7 +89,7 @@ export default function APIStatusPage() {
     <div className="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
-          TemplateHub API Status
+          Lupleg ShipNow API Status
         </h1>
 
         <Card className="mb-8">
@@ -101,7 +102,7 @@ export default function APIStatusPage() {
               >
                 {allOperational
                   ? "All Systems Operational"
-                  : "Some Systems Degraded"}
+                  : "Systems Degraded"}
               </Badge>
             </CardTitle>
           </CardHeader>
@@ -144,12 +145,12 @@ export default function APIStatusPage() {
 
         <p className="mt-8 text-center text-sm text-gray-500">
           If you&apos;re experiencing issues, please contact our{" "}
-          <a
-            href="/support"
+          <Link
+            href="mailto:payments@lupleg.website"
             className="font-medium text-[#954DEA] hover:text-[#8A45D8]"
           >
             support team
-          </a>
+          </Link>
           .
         </p>
       </div>
