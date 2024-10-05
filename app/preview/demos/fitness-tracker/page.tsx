@@ -47,9 +47,9 @@ export default function FitnessTracker() {
       <div className="max-w-6xl mx-auto">
         <header className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold text-gray-800">FitTrack Pro</h1>
-          <Avatar className="h-12 w-12">
+          <Avatar className="h-12 w-12 text-black">
             <AvatarImage src="/placeholder.svg?height=48&width=48" alt="User" />
-            <AvatarFallback>JD</AvatarFallback>
+            <AvatarFallback>MS</AvatarFallback>
           </Avatar>
         </header>
 
